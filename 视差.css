@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+::-webkit-scrollbar{
+    /* 清楚滚动条样式 */
+    display: none;
+}
+#content{
+    width: 100vw;
+    /* 容器高度自适应 用于滚动 */
+    height: auto;
+}
+#content div{
+    height: 100vh;
+    background-color: rgb(196, 203, 207,0.6);
+    color: white;
+    font-size: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    background-size: cover;
+    overflow: hidden;
+
+    /* 将背景属性固定到当前相对窗口的位置 */
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    cursor: default;
+    user-select: none;
+}
+#img1{
+    background-image: url(70560905_p0_master1200.jpg);
+}
+#img2{
+    background-image: url(70560905_p0_master1200.jpg);
+}
+#img3{
+    background-image: url(70560905_p0_master1200.jpg);
+}
+.button button{
+    margin: 10px 20px;
+}

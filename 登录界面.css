@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("70560905_p0_master1200.jpg");
+    background-size: cover;
+    overflow: hidden;
+
+    /* 将背景属性固定到当前相对窗口的位置 */
+
+    max-width: 100%;
+    cursor: default;
+    user-select: none;
+}
+
+.img{
+    background-size: cover;
+    overflow: hidden;
+
+    /* 将背景属性固定到当前相对窗口的位置 */
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    cursor: default;
+    user-select: none;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 380px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(1px);
+    background: rgba(50,50,50,0.3);
+}
+.box > h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.box .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.box .input > label{
+    margin-bottom: 5px;
+    color: rgba(255,255,255,0.9);
+    font-size: 15px;
+}
+
+.box .input > input{
+    box-sizing: border-box;
+    color: black;
+    font-size: 14px;
+    height: 35px;
+    width: 250px;
+    background: Transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+    padding: 0 10px;
+}
+
+.box .input > input:focus{
+    color: black;
+}
+
+.box .btn{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.box .btn > a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    transition: 0.2s;
+    width: 250px;
+    text-align: end;
+    margin-top: 15px;
+}
+
+.box .btn > a:hover{
+    color: #0e589f;
+}
+
+.box .btn > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.box .btn > div > button{
+    width: 130px;
+    height: 35px;
+    background-color: Transparent;
+    border: 1px solid rgba(255,255,255,0.5)
+}
+
+
+.box .btn > div > button:nth-of-type(2){
+    margin-left: 10px;
+}
